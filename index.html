@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кристина — фотограф из Санкт‑Петербурга</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение шрифта Instrument Serif -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Меню -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="logo">Кристина</a>
+            <ul class="nav-list">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#gallery">Примеры работ</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/placeholder-hero.JPG" alt="Фотограф Кристина" class="hero-img">
+            <div class="hero-text">
+                <h1>Привет, я Кристина, начинающий фотограф из Санкт-Петербурга.</h1>
+                <p>Хочу показать вам несколько моих фотосетов, участником которых можете стать и вы! Вот мои примеры работ:</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея фотографий -->
+    <section class="gallery">
+        <h2>Быстрая галерея</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/photo1.jpg" alt="Фото 1" loading="lazy"></div>
+            <div class="gallery-item gallery-item--large"><img src="images/photo2.jpg" alt="Фото 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/photo3.jpg" alt="Фото 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/photo4.jpg" alt="Фото 4" loading="lazy"></div>
+            <div class="gallery-item gallery-item--tall"><img src="images/photo5.jpg" alt="Фото 5" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/photo6.jpg" alt="Фото 6" loading="lazy"></div>
+        </div>
+    </section>
+
+    <!-- Примеры работ -->
+    <section id="gallery" class="work-examples shifted-right">
+        <h2>Ниже приведены полные сеты</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="images/nature1.jpg" alt="Превью сета на природе" loading="lazy" class="category-preview">
+                <h3>На природе</h3>
+                <p>Легкие и живые кадры в парках, у воды и в городских локациях с естественным светом.</p>
+                <a href="nature.html" class="btn">Смотреть</a>
+            </div>
+            <div class="category">
+                <img src="images/indoor1.jpg" alt="Превью сета в помещении" loading="lazy" class="category-preview category-preview--top">
+                <h3>В помещении</h3>
+                <p>Уютные фотосессии дома, в кафе или интерьерных пространствах с мягкой постановкой.</p>
+                <a href="indoor.html" class="btn">Смотреть</a>
+            </div>
+            <div class="category">
+                <img src="images/studio1.JPG" alt="Превью сета в студии" loading="lazy" class="category-preview">
+                <h3>В студии</h3>
+                <p>Контролируемый свет, чистая композиция и выразительные портреты для портфолио.</p>
+                <a href="studio.html" class="btn">Смотреть</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts shifted-right">
+        <h2>Контакты</h2>
+        <p class="contacts-intro">Заполните бриф, и я свяжусь с вами для уточнения деталей съемки. Если удобнее, можно написать или позвонить напрямую.</p>
+        <div class="contacts-content">
+            <div class="contact-info">
+                <h3>Быстрый способ связи</h3>
+                <p>Обычно отвечаю в течение дня. Для срочного запроса лучше звонок или Telegram.</p>
+                <ul>
+                    <li>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                    <li>Email: <a href="mailto:hello.kristina.photo@example.com">hello.kristina.photo@example.com</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" class="btn-social">MAX</a>
+                    <a href="#" class="btn-social">Telegram</a>
+                    <a href="#" class="btn-social">VK</a>
+                </div>
+                <div class="contact-notes">
+                    <h3>Как проходит бронирование</h3>
+                    <ol>
+                        <li>Вы отправляете заявку с пожеланиями и референсами.</li>
+                        <li>Мы согласовываем формат, дату, локацию и тайминг.</li>
+                        <li>Вы получаете подтверждение и рекомендации по подготовке.</li>
+                    </ol>
+                </div>
+            </div>
+            <form class="feedback-form" action="#" method="post">
+                <h3>Заявка на фотосессию</h3>
+
+                <label for="client-name">Имя</label>
+                <input id="client-name" name="client_name" type="text" placeholder="Как к вам обращаться" autocomplete="name" required>
+
+                <label for="shoot-type">Тип съемки</label>
+                <select id="shoot-type" name="shoot_type" required>
+                    <option value="" selected disabled>Выберите формат</option>
+                    <option value="nature">На природе</option>
+                    <option value="indoor">В помещении</option>
+                    <option value="studio">В студии</option>
+                    <option value="other">Другое</option>
+                </select>
+
+                <label for="shoot-date">Желаемая дата</label>
+                <input id="shoot-date" name="shoot_date" type="date" required>
+
+                <label for="shoot-location">Локация / район</label>
+                <input id="shoot-location" name="shoot_location" type="text" placeholder="Например: центр СПб или Приморский район">
+
+                <label for="shoot-budget">Бюджет (руб)</label>
+                <input id="shoot-budget" name="shoot_budget" type="number" min="1000" step="500" placeholder="Например: 5000">
+
+                <label for="contact-method">Удобный способ связи</label>
+                <select id="contact-method" name="contact_method" required>
+                    <option value="" selected disabled>Выберите способ</option>
+                    <option value="phone">Телефон</option>
+                    <option value="telegram">Telegram</option>
+                    <option value="email">Email</option>
+                </select>
+
+                <label for="contact-value">Телефон / ник / email</label>
+                <input id="contact-value" name="contact_value" type="text" placeholder="+7 (999) 123-45-67 или @nickname" required>
+
+                <label for="shoot-notes">Пожелания к съемке</label>
+                <textarea id="shoot-notes" name="shoot_notes" placeholder="Цель съемки, количество человек, референсы, пожелания по стилю" rows="4"></textarea>
+
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Кристина. Все права защищены.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
